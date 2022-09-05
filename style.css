@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(30, 35, 109), rgb(4, 16, 82), rgb(27, 65, 61));
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+.user-form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.user-form input {
+    width: 100%;
+    background: linear-gradient(rgb(124, 129, 202), rgb(173, 182, 231), rgb(157, 196, 192));
+    color: black;
+    border-radius: 7px 2px 7px;
+    border: 2px solid rgb(0, 75, 109);
+    padding: 1em;
+    margin: 3em 0.5em;
+    font-size: 1.1em;
+    
+}
+.user-form input:focus {
+    box-shadow: 2px 5px 7px 2px rgba(33, 240, 255, 0.808);
+    transition: 0.43s;
+}
+
+.card {
+    max-width: 800px;
+    background: linear-gradient(rgb(0, 82, 85), rgb(0, 68, 77), rgb(47, 76, 100));
+    border-radius: 10px 20px 2px;
+    display: flex;
+    padding: 2.5em;
+    margin: 0 2em;
+}
+
+.card:hover {
+    box-shadow: 2px 5px 7px 2px rgba(33, 240, 255, 0.808);
+    transition: 0.43s;
+}
+
+.profile-pic {
+    border-radius: 12%;
+    border: 0.7em solid rgb(0, 14, 78);
+    height: 150px;
+    width: 150px;
+}
+
+.user-detail {
+    color: rgb(214, 214, 214);
+    margin-left: 2em;
+}
+
+.user-detail h2 {
+    margin-top: 0;
+}
+
+.user-detail ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0;
+    max-width: 500px;
+}
+
+.user-detail ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-detail ul li strong {
+    font-size: 0.8em;
+    margin-left: 0.5em;
+}
+
+#repo-container {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(rgb(1, 25, 26), rgb(7, 40, 44), rgb(5, 24, 39));
+    border-radius: 0.3em 0.7em;
+
+}
+.repo {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 0.4em;
+    margin: 1px 5px;
+    background-color: aqua;
+    display: inline-block;
+    font-size: 0.7em;
+    text-align: center;
+    border-radius: 2px 3px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.repo:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+@media(max-width: 600px) {
+    body {
+        font-size: 0.8em;
+    }
+    .card {
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+        margin: 0 2em;
+    }
+
+    .user-form {
+        max-width: 300px;
+    }
+}
